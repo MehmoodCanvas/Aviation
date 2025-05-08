@@ -36,15 +36,22 @@ class Login extends Controller
 
     public function signup(Request $request)
     {
-        $data = $request->validate([
+        $validator = \Validator::make($request->all(), [
             'member_full_name' => 'required|string|max:255',
-            'member_email' => 'required|string|email|max:255|unique:member',
+            'member_email' => 'required|string|email|max:255|unique:member,member_email',
             'member_password' => 'required|string|min:8',
             'member_role' => 'required',
             'member_profile' => 'nullable',
-
         ]);
 
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 'error',
+                'errors' => $validator->errors(),
+            ], 422);
+        }
+
+        $data = $validator->validated();
         $data['member_password'] = Hash::make($data['member_password']);
         $user = \App\Models\Member::create($data);
         $token = $user->createToken('member-token')->plainTextToken;
