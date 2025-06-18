@@ -1,0 +1,183 @@
+@media only screen and (min-width: 1800px){
+    .container{
+        max-width: 1400px;
+    }
+}
+@media only screen and (max-width: 1799px){
+    .edit_main_left_box_tabs .nav-tabs .nav-link {
+        font-size: 12px;
+    }
+    .product_box_main_img img {
+        width: 80px;
+        height: 80px;
+    }
+    .product_box_main_radio label {
+        top: 38%;
+        left: 50%;
+        width: 90px;
+        height: 75%;
+    }
+    .product_box_main {
+        height: 120px;
+    }
+    .product_box_main_wrap {
+        max-height: 270px;
+    }
+    .frame_box_main_size {
+        width: 40px;
+        height: 33px;
+    }
+    .edit_main_left_box li.breadcrumb-item a {
+        font-size: 10px;
+    }
+    .edit_main_wrap_f {
+        height: calc(-138.5156px + 100vh);
+    }
+    .edit_main_right_box .edit_main_left_box_tabs .nav-tabs .nav-link {
+        font-size: 12px;
+    }
+    .align_btns a {
+        font-size: 11px;
+    }
+    .right_box_edit_panel {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .edit_main_right_box1 {
+        padding: 0px 0px;
+        max-height: 410px;
+    }
+    .edit_main_right_box_top_btn button {
+        font-size: 18px;
+    }
+    .input-group.w-auto input {
+        font-size: 12px;
+        width: 40px;
+    }
+    .edit_main_right_del_btn button {
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .edit_main_right_box .edit_main_left_box_tabs {
+        margin: 0px 0px 20px 0px;
+    }
+    .form-control {
+        padding: 5px 10px;
+        font-size: 13px;
+        width: 37px !important;
+    }
+    .right_box_edit_heading {
+        font-size: 14px;
+    }
+    .right_box_edit_panel_range label {
+        font-size: 12px;
+    }
+    .frame_box_main_sizes_text1 h6 {
+        font-size: 16px;
+    }
+    .frame_box_main_sizes_text1 p {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 1399px){
+    .header_wrap_main_links ul li a {
+        font-size: 14px;
+    }
+    .main_heading {
+        font-size: 30px;
+    }
+    .desc {
+        font-size: 14px;
+    }
+    .common_dark_btn {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+    .common_light_btn {
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+    .index_first_cr_box_text h5 {
+        font-size: 18px;
+    }
+    .index_first_cr_box_text p {
+        font-size: 22px;
+    }
+    .index_fourth_wrap_box_bg h5 {
+        font-size: 20px;
+        font-family: var(--michroma-regular);
+        color: var(--black);
+        margin: 0px 0px 10px 0px;
+    }
+    .index_fourth_wrap_box_bg h6 {
+        font-size: 16px;
+        font-family: var(--michroma-regular);
+        color: var(--black);
+        margin: 0px 0px 10px 0px;
+    }
+    .index_fourth_wrap_box_bg p {
+        font-size: 14px;
+    }
+    .index_sixth_wrap_text h6 {
+        font-size: 30px;
+    }
+    .index_sixth_wrap_text h5 {
+        font-size: 16px;
+    }
+    .index_fifth_wrap_text h6 {
+        font-size: 30px;
+    }
+    .index_fifth_wrap_text p {
+        font-size: 14px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .index_fifth_wrap_content p {
+        font-size: 14px;
+        margin: 0px 0px 10px 0px;
+    }
+    .marquee_wrapper ul li {
+        font-size: 30px;
+    }
+    .index_third_cr_box_text h5 {
+        font-size: 22px;
+    }
+    .index_fourth_wrap_text h6 {
+        font-size: 30px;
+    }
+    .shop_first_wrap_breadcrumbs ul li a {
+        font-size: 14px;
+        font-family: var(--interDisplay-regular);
+    }
+    .product_detail_first_wrap_t h5 {
+        font-size: 30px;
+    }
+    .product_detail_second_wrap_review_t h6 {
+        font-size: 30px;
+    }
+    .product_detail_second_wrap_review_t p {
+        font-size: 14px;
+    }
+    .product_detail_second_wrap_review_t {
+        margin: 0px 0px 20px 0px;
+    }
+    .product_detail_second_wrap_review_t h6 {
+        font-size: 12px;
+    }
+    .footer_wrap_linkh h6 {
+        font-size: 22px;
+    }
+    .footer_wrap_text1 p {
+        font-size: 12px;
+    }
+    .footer_wrap_link1 ul li a {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1199px){
+}
+@media only screen and (max-width: 991px){
+}
+@media only screen and (max-width: 575px){
+}
