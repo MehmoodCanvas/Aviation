@@ -5,6 +5,10 @@
 
 
 QA
+
+
+
+
 1. Who is going to Assign a Teacher or stundent? 
 2. What My Courses is doing in the CFI Dashboard on App ? what's its usage 
 3. Who will assign the course to Students? CFI or Admin? 
