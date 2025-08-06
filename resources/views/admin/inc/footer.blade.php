@@ -4,7 +4,7 @@
 <!-- ======= Footer ======= -->
  <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>UnforgetAble Frames</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>Aviation</span></strong>. All Rights Reserved
     </div>
 
     </div>
