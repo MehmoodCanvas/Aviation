@@ -17,10 +17,10 @@
       <table class="table datatable">
         <thead>
             <th>S.No</th>
-            <th>User Name</th>
-            <th>User Email</th>
-            <th>User Status</th>
-            <th>User Role</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Role</th>
             <th>Action</th>
         </thead>
         <tbody>

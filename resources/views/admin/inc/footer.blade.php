@@ -25,36 +25,33 @@
   <!-- Template Main JS File -->
   <script src="{{asset('assets/admin/js/main.js')}}"></script>
   <script src="{{asset('assets/admin/vendor/multi/image-uploader.min.js')}}"></script>
-  <script>
-const container = document.getElementById('sizeRowsContainer');
-const addBtn = document.getElementById('addMoreSizeBtn');
-const removeBtn = document.getElementById('removeLastSizeBtn');
-const template = document.getElementById('sizeRowTemplate');
+<script>
+    const container = document.getElementById('sizeRowsContainer');
+    const addBtn = document.getElementById('addMoreSizeBtn');
+    const removeBtn = document.getElementById('removeLastSizeBtn');
+    const template = document.getElementById('sizeRowTemplate');
 
-function updateRemoveBtn() {
-    removeBtn.style.display = container.children.length > 1 ? '' : 'none';
-}
-
-addBtn.addEventListener('click', function () {
-    const clone = template.cloneNode(true);
-    clone.removeAttribute('id');
-    clone.querySelectorAll('input').forEach(input => input.value = '');
-    container.appendChild(clone);
-    updateRemoveBtn();
-});
-
-removeBtn.addEventListener('click', function () {
-    if (container.children.length > 1) {
-        container.lastElementChild.remove();
-        updateRemoveBtn();
+    function updateRemoveBtn() {
+        removeBtn.style.display = container.children.length > 1 ? '' : 'none';
     }
-});
 
-updateRemoveBtn();
+    addBtn.addEventListener('click', function () {
+        const clone = template.cloneNode(true);
+        clone.removeAttribute('id');
+        clone.querySelectorAll('input').forEach(input => input.value = '');
+        container.appendChild(clone);
+        updateRemoveBtn();
+    });
 
+    removeBtn.addEventListener('click', function () {
+        if (container.children.length > 1) {
+            container.lastElementChild.remove();
+            updateRemoveBtn();
+        }
+    });
 
-
-  </script>
+    updateRemoveBtn();
+</script>
   <script>
         $('.input-images').imageUploader();
         $('.input-images2').imageUploader2();
@@ -62,25 +59,24 @@ updateRemoveBtn();
    </script>
 
 <script>
-    function downloadpdf(){
+  function downloadpdf(){
       document.getElementsByClassName("download_btn")[0].innerHTML='Downloading...';
-    var element = document.getElementById('invoice-print');
-  var opt = {
-  margin:       0,
-  filename:     'invoice.pdf',
-  image:        { type: 'jpeg', quality: 1 },
-  html2canvas:  { scale: 2 },
-  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-};
+          var element = document.getElementById('invoice-print');
+          var opt = {
+          margin:       0,
+          filename:     'invoice.pdf',
+          image:        { type: 'jpeg', quality: 1 },
+          html2canvas:  { scale: 2 },
+          jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
 
-html2pdf().set(opt).from(element).save().then(function () {
-  document.getElementsByClassName("download_btn")[0].innerHTML = 'Completed';
-}).catch(function (error) {
-  document.getElementsByClassName("download_btn")[0].innerHTML = 'Error In Downloading Invoice, Please Reload';
-});
+        html2pdf().set(opt).from(element).save().then(function () {
+          document.getElementsByClassName("download_btn")[0].innerHTML = 'Completed';
+        }).catch(function (error) {
+          document.getElementsByClassName("download_btn")[0].innerHTML = 'Error In Downloading Invoice, Please Reload';
+        });
 
-    };
-
+  };
 </script>
 </body>
 
