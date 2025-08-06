@@ -40,7 +40,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/homepage', [Dashboard::class, 'homepage']);
     Route::get('/about', [Dashboard::class, 'about']);
     Route::get('/order', [Dashboard::class, 'order']);
-    Route::get('/products', [Dashboard::class, 'products']);
+    Route::get('/users', [Dashboard::class, 'all_users']);
     Route::get('/add-product', [Dashboard::class, 'add_product']);
     Route::get('/orders', [Dashboard::class, 'orders']);
     Route::get('/product-edit/{id}', [Dashboard::class, 'edit_product']);

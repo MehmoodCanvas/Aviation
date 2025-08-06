@@ -12,18 +12,21 @@ use Illuminate\Support\Facades\DB;
 class Dashboard extends Controller
 {
     public function index(){
+        $cfi= DB::table('member')->where('member_role',1)->count();
+        $student= DB::table('member')->where('member_role',2)->count();
 
-        return view('admin.index');
+        return view('admin.index',compact('cfi','student'));
     }
 
-    public function products(){
-        $user = Auth::user();
-        if($user){
-            $product= Product::all();
-        return view('admin.product',compact('product'));
-    }else{
-       return redirect('/admin/login');
-    }
+    public function all_users(){
+
+
+        $users= DB::table('member')->join('role','role_id','member_role')->select('member.member_id','member.member_full_name','member.member_email','member.member_status','role.role_name')->get();
+
+
+      return view('admin.user',compact('users'));
+
+
     }
     public function add_product(){
         $category= DB::table('category')->get();

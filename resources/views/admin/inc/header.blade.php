@@ -125,8 +125,13 @@
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
-
       <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('admin/users') }}">
+          <i class="bi bi-person"></i>
+          <span>Users</span>
+        </a>
+      </li>
+      {{-- <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>Product Management</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -143,7 +148,7 @@
           </li>
           
         </ul>
-      </li>
+      </li> --}}
     
   
       
@@ -160,7 +165,8 @@
           </li>
           
         </ul>
-      </li><!-- End Charts Nav -->
+      </li>
+      <!-- End Charts Nav -->
 
 
       <li class="nav-heading">General Setting</li>

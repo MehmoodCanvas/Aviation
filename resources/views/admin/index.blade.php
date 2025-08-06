@@ -34,7 +34,7 @@
                       <i class="bi bi-cart"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>{{count($orders)}}</h6>
+                      <h6>{{$cfi}}</h6>
                       <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                     </div>
@@ -57,7 +57,7 @@
                       <i class="bi bi-currency-dollar"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>${{$total}}</h6>
+                      <h6>${{$student}}</h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                     </div>
@@ -82,7 +82,6 @@
                       new ApexCharts(document.querySelector("#reportsChart"), {
                         series: [{
                           name: 'Sales',
-                          data: [@foreach($orders as $order){{$order->order_total_amount}},@endforeach],
                         },
                       ],
                         chart: {
@@ -147,14 +146,14 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach ($contacts as $contacts )
+                      {{-- @foreach ($contacts as $contacts )
                       <tr>
                         <th scope="row"><a href="#">#{{$loop->iteration}}</a></th>
                         <td>{{$contacts->contact_phone}}</td>
                         <td><a href="#" class="text-primary">{{$contacts->contact_email}}</a></td>
                         <td>$64</td>
                       </tr>     
-                      @endforeach
+                      @endforeach --}}
                      
 
                     </tbody>
