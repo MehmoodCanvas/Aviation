@@ -37,8 +37,8 @@ Route::get('/admin',function(){
 
 Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/dashboard', [Dashboard::class, 'index']);
-    Route::get('/homepage', [Dashboard::class, 'homepage']);
-    Route::get('/about', [Dashboard::class, 'about']);
+    Route::get('/logs', [Dashboard::class, 'logs']);
+    Route::get('/certificates', [Dashboard::class, 'certificates']);
     Route::get('/order', [Dashboard::class, 'order']);
     Route::get('/users', [Dashboard::class, 'all_users']);
     Route::get('/add-product', [Dashboard::class, 'add_product']);

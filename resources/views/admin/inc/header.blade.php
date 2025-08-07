@@ -150,10 +150,22 @@
         </ul>
       </li> --}}
     
-  
-      
+   <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('admin/logs') }}">
+         <i class="bi bi-journal-check"></i>
+
+          <span>Logs</span>
+        </a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('admin/certificates') }}">
+        <i class="bi bi-patch-check"></i>
+
+          <span>Certificates</span>
+        </a>
+      </li>
       <!-- End Components Nav -->
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-bar-chart"></i><span>Order Managment</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -165,7 +177,7 @@
           </li>
           
         </ul>
-      </li>
+      </li> --}}
       <!-- End Charts Nav -->
 
 

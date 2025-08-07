@@ -24,17 +24,17 @@ class Dashboard extends Controller
       return view('admin.user',compact('users'));
 
     }
-    public function add_product(){
+    public function logs(){
       
-        $category= DB::table('category')->get();
-        return view('admin.product-add',compact('category'));
+        $logs=null;
+        return view('admin.logs',compact('logs'));
    
     }
 
-    public function edit_product($id){
+    public function certificates(){
         
-        $product= DB::table('product')->where('product_id',$id)->first();
-        return view('admin.edit-product',compact('product'));
+        $certificates= null;
+        return view('admin.certificates',compact('certificates'));
     }   
 
     public function orders(){
