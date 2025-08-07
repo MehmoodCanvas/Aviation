@@ -23,7 +23,6 @@ class Dashboard extends Controller
       $users= DB::table('member')->join('role','role_id','member_role')->select('member.member_id','member.member_full_name','member.member_email','member.member_status','role.role_name')->get();      
       return view('admin.user',compact('users'));
 
-
     }
     public function add_product(){
       
@@ -39,21 +38,20 @@ class Dashboard extends Controller
     }   
 
     public function orders(){
+      
         $order= DB::table('order')->join('order_item','order_item_order_id','order_id')->join('product','product_id','order_item_product_id')->get();
         return view('admin.order',compact('order'));
     }
 
     public function order_view($id){
+      
         $order=DB::table('order')->where('order_id',$id)->first();
         $order_item= DB::table('order_item')->where('order_item_order_id',$id)->get();
         foreach($order_item as $items){
             $products[]= DB::table('product')->where('product_id',$items->order_item_product_id)->get();
         }
        $product=$products;   
-
        return view('admin.invoice',compact('order','product'));
+    
     }
-
-  
-
 }
